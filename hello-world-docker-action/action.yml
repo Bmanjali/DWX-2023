@@ -1,15 +1,15 @@
 name: 'Hallo World Action'
-description: 'Sag mal hello'
+description: 'Steh mal auf, Digger!'
 inputs: 
-  who-to-greet:
-    description: 'Wen willst du grüßen?'
+  who-to-trigger:
+    description: 'Wen willst du dazu auffordern?'
     required: true
     default: 'Alle'
 outputs:
   time: 
-    description: 'Wann wurden die Grüße versandt?'
+    description: 'Wann wurde dazu aufgefordert?'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.who-to-trigger }}
