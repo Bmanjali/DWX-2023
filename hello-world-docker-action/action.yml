@@ -1,0 +1,15 @@
+name: 'Hallo World Action'
+description: 'Sag mal hello'
+inputs: 
+  who-to-greet:
+    description: 'Wen willst du grüßen?'
+    required: true
+    default: 'Alle'
+outputs:
+  time: 
+    description: 'Wann wurden die Grüße versandt?'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
