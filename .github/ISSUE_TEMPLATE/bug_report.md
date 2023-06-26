@@ -1,10 +1,10 @@
 ---
 name: 🐞 Bug report
-about: Create a report to help us improve
+about: Erstellen Sie einen Fehler als Käfer
 title: '[Bug]:'
 labels: [bug, unplanned]
 assignees: 
-  - wulfland
+  - bmanjali
 ---
 
 **Describe the bug**
